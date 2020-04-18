@@ -1,0 +1,48 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+{% block content %}
+    <section id="intro">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-6"><b>Amor Fati</b></h1>
+                <p class="lead">"What strikes me is the fact that in our society, art has become something which is only related to objects, and not to individuals, or to life."  -Michel Foucault</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mid">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white">
+                        <a href="{% url 'onwork' %}">
+                        <img src="{% static "mysite/images/index_garden.jpg" %}" class="card-img" alt="Fuckfuck">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title" style="text-align:left">On work</h5>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white">
+                        <a href="{% url 'philosophy' %}">
+                        <img src="{% static "mysite/images/index_tree.jpg" %}" class="card-img" alt="Fuckfuck">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title" style="text-align:left">Philosophy</h5>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white" >
+                        <a href="{% url 'about' %}">
+                        <img src="{% static "mysite/images/DSC_0163.JPG" %}" class="card-img" alt="Fuckfuck">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title" style="text-align:right">About...</h5>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+{% block content %}
+    <h1>Under Construction! Click here!</h1>
+    <button type="button" onclick="myFunction()">click</button>
+
+    <p id="change">You can change this text</p>
+    <button type="button" onclick="changetext()">change</button>
+
+    <script type="text/javascript" src="{% static 'mysite/js/onwork.js' %}"></script>
+{% endblock %}
